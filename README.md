@@ -5,6 +5,7 @@ This is a grid world envrionment made using gymnasium, where a guide dog agent h
 ![alt text](image.png)
 
 # File Structure
+```bash
 rl-guide-dog/
 ├── envs/
 │   └── guide_dog_env.py   # Gymnasium environment definition
@@ -13,16 +14,25 @@ rl-guide-dog/
 ├── visualize.py           # Storyboard rendering utilities
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
-
+```
 # How to run
 
-Train a PPO agent on the GuideDog environment:
-"""python train.py"""
+Train a PPO agent on the GuideDog environment using:
+'''
+python train.py
+'''
 A trained model will be saved as ppo_guide_dog.zip.
 
-Run an episode and display a storyboard using:
-"""python test.py"""
+Then run an episode and display a storyboard using:
+'''
+python test.py
+'''
 This generates a visual grid-by-grid plot showing agent, user, goal, rewards, and terminal status.
+
+To visualize the rollouts on the streamlit app, run:
+'''
+streamlit run app.py
+'''
 
 # License
 MIT License
