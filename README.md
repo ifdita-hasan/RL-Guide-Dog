@@ -1,6 +1,6 @@
 # RL-Guide-Dog
 
-This is a grid world envrionment made using gymnasium, where a guide dog agent helps a simulated user to reach their goal while avoiding obstacles. 
+This is a reinforcement learning-based navigation system inspired by guide dogs, where a guide dog agent helps a simulated user to reach their goal while avoiding obstacles. The grid world envrionment was made using gymnasium.
 
 ![alt text](image.png)
 
@@ -34,5 +34,7 @@ To visualize the rollouts on the streamlit app, run:
 streamlit run app.py
 ```
 
+# Proximal Policy Optimization
+The algorithm used to train the agent is called Proximal Policy Optimization, an on-policy actor‑critic method which learns a policy (actor) and a value function (critic) simultaneously. It optimizes a Clipped Surrogate Objective to prevent excessive divergence.
 # License
 MIT License
