@@ -18,21 +18,21 @@ rl-guide-dog/
 # How to run
 
 Train a PPO agent on the GuideDog environment using:
-'''
+```bash
 python train.py
-'''
+```
 A trained model will be saved as ppo_guide_dog.zip.
 
 Then run an episode and display a storyboard using:
-'''
+```bash
 python test.py
-'''
+```
 This generates a visual grid-by-grid plot showing agent, user, goal, rewards, and terminal status.
 
 To visualize the rollouts on the streamlit app, run:
-'''
+```bash
 streamlit run app.py
-'''
+```
 
 # License
 MIT License
