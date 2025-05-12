@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.patches import Rectangle
+from matplotlib.patches import Rectangle\
+
 
 def render_storyboard_v2(frames, columns=4, figsize=(16, 8)):
     """
