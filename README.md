@@ -14,6 +14,7 @@ This is a reinforcement learning-based navigation system inspired by guide dogs,
 
 # File Structure
 ```bash
+```bash
 rl-guide-dog/
 ├── envs/
 │   └── guide_dog_env.py   # Custom Gymnasium env
@@ -24,6 +25,7 @@ rl-guide-dog/
 ├── app.py                 # Streamlit interface
 ├── requirements.txt       # Python deps
 └── README.md              # Project documentation
+```
 ```
 # How to run
 
@@ -48,5 +50,13 @@ streamlit run app.py
 
 # Proximal Policy Optimization
 The algorithm used to train the agent is called Proximal Policy Optimization, an on-policy actor‑critic method which learns a policy (actor) and a value function (critic) simultaneously. It optimizes a Clipped Surrogate Objective to prevent excessive divergence.
+To visualize the rollouts on the streamlit app, run:
+```bash
+streamlit run app.py
+```
+
+# Proximal Policy Optimization
+The algorithm used to train the agent is called Proximal Policy Optimization, an on-policy actor‑critic method which learns a policy (actor) and a value function (critic) simultaneously. It optimizes a Clipped Surrogate Objective to prevent excessive divergence.
 # License
 MIT License
+
